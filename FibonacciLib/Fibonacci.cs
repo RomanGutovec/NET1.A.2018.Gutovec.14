@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace FibonacciLib
 {
+    /// <summary>
+    /// Represents opportunity to generate Fibonacci sequence
+    /// </summary>
     public static class Fibonacci
     {
+        /// <summary>
+        /// Generate Fibonacci sequence
+        /// </summary>
+        /// <exception cref="ArgumentException">Thrown when amount haves incorrect value</exception>
+        /// <param name="amount">amount of Fibonacci numbers</param>
+        /// <returns>list of Fibonacci numbers</returns>
         public static List<long> FindFibonacciNumbers(int amount = 2)
         {
             if (amount < 2)
